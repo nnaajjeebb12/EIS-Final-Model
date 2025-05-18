@@ -49,7 +49,7 @@ pip install -r requirements.txt
 3. Run the model:
 
 ```bash
-python Final_Model.py
+python Final_Model_Graph.py
 ```
 
 ## Data Format
@@ -68,6 +68,7 @@ The script provides detailed classification results including:
 - Per-category accuracy statistics
 - Overall model performance metrics
 - Prediction distribution breakdown
+- Bode plot Vectors on individual points (1 battery)
 
 ## Model Architecture
 

@@ -77,21 +77,6 @@ def predict_from_saved(file_path):
     return label_map[idx], probs[idx]
 
 
-# 5) Prediction
-# evaluation_dir = 'Evaluation_Data'
-# for label_folder in ['new', 'used', 'degraded']:
-#     expected = label_folder.capitalize()
-#     folder = os.path.join(evaluation_dir, label_folder)
-#     print(f"\n=== {expected.upper()} ===")
-#     for fname in sorted(os.listdir(folder)):
-#         if not fname.lower().endswith('.xlsx'):
-#             continue
-#         path = os.path.join(folder, fname)
-#         pred, conf = predict_from_saved(path)
-#         mark = '✓' if pred == expected else '✗'
-#         print(
-#             f"{mark} {fname:20s} → expected {expected:8s} predicted {pred:8s} (conf {conf:.2f})")
-
 # 5) Run predictions and collect detailed results
 evaluation_dir = 'Evaluation_Data'
 results = {
